@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import Footer from "./Footer"
-import Note from "./Note"
+import App from "./components/App";
+import Footer from "./components/Footer";
+import Note from "./components/Note";
+import notes from "./notes.js";
 
 ReactDOM.render(
   <div>
-    <App/>
-    <Note/>
-    <Footer/>
+    <App />
+    {notes.map(notes => (
+      <Note key={notes.key} title={notes.title} description={notes.content} />
+    ))}
+    <Footer />
   </div>,
   document.getElementById("root")
 );
