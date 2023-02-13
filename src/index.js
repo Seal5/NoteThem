@@ -8,10 +8,6 @@ import notes from "./notes.js";
 ReactDOM.render(
   <div>
     <App />
-    {notes.map(notes => (
-      <Note key={notes.key} title={notes.title} description={notes.content} />
-    ))}
-    <Footer />
   </div>,
   document.getElementById("root")
 );
