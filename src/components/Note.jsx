@@ -1,7 +1,7 @@
 import React from "react";
 
 function Note(props) {
-  function deleteNote(){
+  function deleteNotes(){
     props.onDelete(props.id);
   }
   return (
@@ -14,3 +14,5 @@ function Note(props) {
 }
 
 export default Note;
+
+
