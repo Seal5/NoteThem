@@ -1,5 +1,5 @@
-
-import React, {useState} from "react";
+import AddIcon from "@mui/icons-material/Add";
+import React, { useState } from "react";
 
 function CreateArea(props) {
   const [note, setNote] = useState({
@@ -16,6 +16,7 @@ function CreateArea(props) {
       };
     });
   }
+  
 
   function handleClick(event) {
     props.onAdd(note);
@@ -26,7 +27,7 @@ function CreateArea(props) {
     event.preventDefault();
   }
 
-    return (
+  return (
     <div>
       <form>
         <input
@@ -42,7 +43,9 @@ function CreateArea(props) {
           placeholder="Take a note..."
           rows="3"
         />
-        <button onClick={handleClick}>Add</button>
+        <button onClick={handleClick}>
+          <AddIcon />
+        </button>
       </form>
     </div>
   );
