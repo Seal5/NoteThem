@@ -16,7 +16,7 @@ function CreateArea(props) {
       };
     });
   }
-  
+
 
   function handleClick(event) {
     props.onAdd(note);
@@ -26,22 +26,27 @@ function CreateArea(props) {
     });
     event.preventDefault();
   }
-
+  const [title , setTitle] = useState(false)
+  function onAddNote() {
+    setTitle(true);
+  }
   return (
     <div>
       <form>
+        {title ?
         <input
           name="title"
           onChange={handleChange}
           value={note.title}
           placeholder="Title"
-        />
+        /> : null}
         <textarea
           name="content"
           onChange={handleChange}
+          onClick={onAddNote}
           value={note.content}
           placeholder="Take a note..."
-          rows="3"
+          rows = {title ? 3 : 1}
         />
         <button onClick={handleClick}>
           <AddIcon />
