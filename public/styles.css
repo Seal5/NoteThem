@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
 body {
   background: #eee;
@@ -12,7 +14,7 @@ body {
 }
 
 header {
-  background-color: #f5ba13;
+  background-color: #80CE9F;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -20,7 +22,7 @@ header {
 
 header h1 {
   color: #fff;
-  font-family: "McLaren", cursive;
+  font-family: 'Comfortaa';
   font-weight: 200;
 }
 
@@ -59,7 +61,7 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #f5ba13;
+  color: #80CE9F;
   border: none;
   width: 36px;
   height: 36px;
@@ -90,7 +92,7 @@ form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #f5ba13;
+  background: #80CE9F;
   color: #fff;
   border: none;
   border-radius: 50%;
